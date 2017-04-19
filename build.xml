@@ -53,14 +53,6 @@
     <target name="deployZip">
       <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" zipFile="${sf.zipFile}" pollWaitMillis="1000" rollbackOnError="true"/>
     </target>
-
-    <!-- Shows deploying code & running tests for code in directory -->
-    <target name="deployCode">
-      <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
-      <sf:deploy username="${sfProduction.username}" password="${sfProduction.password}" serverurl="${sfProduction.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="codepkg" testLevel="RunSpecifiedTests" rollbackOnError="true">
-      	 <runTest>*</runTest> 
-      </sf:deploy>
-    </target>
 	
 	 <!-- Shows deploying code with no TestLevel sepcified -->
     <target name="deployCodeNoTestLevelSpecified">
