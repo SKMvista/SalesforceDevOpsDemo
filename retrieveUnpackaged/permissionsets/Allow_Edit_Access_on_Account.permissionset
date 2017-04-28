@@ -60,6 +60,14 @@
         <apexClass>SandBoxAfterRefreshScriptTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>SonOfGod</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TryOut</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <description>This will be used to provide access to Account.</description>
     <fieldPermissions>
         <editable>true</editable>
